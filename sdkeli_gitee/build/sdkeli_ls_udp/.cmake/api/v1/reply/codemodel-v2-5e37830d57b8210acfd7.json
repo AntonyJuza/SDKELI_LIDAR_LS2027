@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-289f207b9d2c5353251c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sdkeli_ls_udp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sdkeli_ls1207de::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdkeli_ls1207de-c66aa97a0d3b49c5619b.json",
+					"name" : "sdkeli_ls1207de",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdkeli_ls_core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdkeli_ls_core-7ca9579f450d13e52461.json",
+					"name" : "sdkeli_ls_core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdkeli_ls_udp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdkeli_ls_udp_uninstall-c3d6a3fb895bf6f268cd.json",
+					"name" : "sdkeli_ls_udp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7a195704e58445b4adb0.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp",
+		"source" : "/home/tri/gitee_ws/sdkeli_gitee"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

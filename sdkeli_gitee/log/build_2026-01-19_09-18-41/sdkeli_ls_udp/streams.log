@@ -1,0 +1,184 @@
+[0.017s] Invoking command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --build /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp -- -j8 -l8
+[0.057s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.330s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.340s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.380s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.392s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.410s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.428s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.510s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.513s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.600s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.691s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.895s] -- Configuring done (0.8s)
+[0.914s] -- Generating done (0.0s)
+[0.920s] -- Build files have been written to: /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp
+[0.975s] [ 42%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o[0m
+[0.975s] [ 42%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o[0m
+[0.975s] [ 42%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o[0m
+[1.580s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:2[m[K:
+[1.580s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_sensor_frame.h:20:24:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Ksens_data[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[1.580s]    20 |     uint16_t sens_data[[01;35m[K0[m[K];
+[1.580s]       |                        [01;35m[K^[m[K
+[1.635s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:[m[K In member function ‘[01m[Kvirtual int sdkeli_ls_udp::CSDKeliLs1207DEParser::[01;32m[KParse[m[K(const uint8_t*, size_t, sdkeli_ls_udp::SDKeliLsConfig&, sensor_msgs::msg::LaserScan&)[m[K’:
+[1.635s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:135:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[1.635s]   135 |   [01;31m[Krclcpp[m[K::Time stamp = rclcpp::Clock().now();
+[1.635s]       |   [01;31m[K^~~~~~[m[K
+[1.640s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:136:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstamp[m[K’ was not declared in this scope
+[1.640s]   136 |   [01;31m[Kstamp[m[K = stamp - rclcpp::Duration::from_seconds(scan_duration);
+[1.640s]       |   [01;31m[K^~~~~[m[K
+[1.640s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:136:19:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[1.640s]   136 |   stamp = stamp - [01;31m[Krclcpp[m[K::Duration::from_seconds(scan_duration);
+[1.641s]       |                   [01;31m[K^~~~~~[m[K
+[1.641s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:138:11:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[1.641s]   138 |           [01;31m[Krclcpp[m[K::Duration::from_seconds(
+[1.641s]       |           [01;31m[K^~~~~~[m[K
+[1.641s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:141:11:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+[1.641s]   141 |           [01;31m[Krclcpp[m[K::Duration::from_seconds(config.time_offset);
+[1.641s]       |           [01;31m[K^~~~~~[m[K
+[1.753s] gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:104: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o] Error 1
+[1.753s] gmake[2]: *** Waiting for unfinished jobs....
+[3.792s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common_udp.h:11[m[K,
+[3.792s]                  from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:1[m[K:
+[3.792s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:15:6:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum sdkeli_ls_udp::ExitCode[m[K’
+[3.792s]    15 | enum [01;31m[KExitCode[m[K
+[3.792s]       |      [01;31m[K^~~~~~~~[m[K
+[3.792s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8[m[K:
+[3.793s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/parser_base.h:12:6:[m[K [01;36m[Knote: [m[Kprevious definition here
+[3.793s]    12 | enum [01;36m[KExitCode[m[K
+[3.793s]       |      [01;36m[K^~~~~~~~[m[K
+[3.793s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:1[m[K:
+[3.793s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:15:6:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum sdkeli_ls_udp::ExitCode[m[K’
+[3.793s]    15 | enum [01;31m[KExitCode[m[K
+[3.794s]       |      [01;31m[K^~~~~~~~[m[K
+[3.794s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8[m[K:
+[3.794s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/parser_base.h:12:6:[m[K [01;36m[Knote: [m[Kprevious definition here
+[3.794s]    12 | enum [01;36m[KExitCode[m[K
+[3.794s]       |      [01;36m[K^~~~~~~~[m[K
+[3.807s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:31:29:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_MAX_LEN[m[K’ was not declared in this scope
+[3.807s]    31 |     unsigned char sens_data[[01;31m[KCMD_FRAME_MAX_LEN[m[K];
+[3.807s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.809s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:31:29:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_MAX_LEN[m[K’ was not declared in this scope
+[3.809s]    31 |     unsigned char sens_data[[01;31m[KCMD_FRAME_MAX_LEN[m[K];
+[3.809s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.830s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:75:24:[m[K [01;31m[Kerror: [m[K‘[01m[KRECV_BUFFER_SIZE[m[K’ was not declared in this scope
+[3.830s]    75 |   uint8_t recv_buffer_[[01;31m[KRECV_BUFFER_SIZE[m[K];
+[3.830s]       |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.833s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:75:24:[m[K [01;31m[Kerror: [m[K‘[01m[KRECV_BUFFER_SIZE[m[K’ was not declared in this scope
+[3.833s]    75 |   uint8_t recv_buffer_[[01;31m[KRECV_BUFFER_SIZE[m[K];
+[3.833s]       |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.844s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:76:25:[m[K [01;31m[Kerror: [m[K‘[01m[KRECV_BUFFER_SIZE[m[K’ was not declared in this scope
+[3.844s]    76 |   uint8_t store_buffer_[[01;31m[KRECV_BUFFER_SIZE[m[K];
+[3.844s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.846s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:76:25:[m[K [01;31m[Kerror: [m[K‘[01m[KRECV_BUFFER_SIZE[m[K’ was not declared in this scope
+[3.847s]    76 |   uint8_t store_buffer_[[01;31m[KRECV_BUFFER_SIZE[m[K];
+[3.847s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.864s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:77:25:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_MAX_SUB_PKG_NUM[m[K’ was not declared in this scope
+[3.864s]    77 |   dataSaveSt data_save_[[01;31m[KCMD_FRAME_MAX_SUB_PKG_NUM[m[K];
+[3.864s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.866s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:77:25:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_MAX_SUB_PKG_NUM[m[K’ was not declared in this scope
+[3.867s]    77 |   dataSaveSt data_save_[[01;31m[KCMD_FRAME_MAX_SUB_PKG_NUM[m[K];
+[3.867s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.867s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:[m[K In constructor ‘[01m[Ksdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KCSDKeliLsCommon[m[K(sdkeli_ls_udp::CParserBase*, const rclcpp::Node::SharedPtr&)[m[K’:
+[3.867s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:14:3:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Ksdkeli_ls_udp::CSDKeliLsCommon[m[K’ does not have any field named ‘[01m[Kexpected_freq_[m[K’
+[3.867s]    14 |   [01;31m[Kexpected_freq_[m[K(15.0)
+[3.867s]       |   [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.870s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:[m[K In member function ‘[01m[Kvirtual int sdkeli_ls_udp::CSDKeliLsCommonUdp::[01;32m[KSendDeviceReq[m[K(const uint8_t*, size_t)[m[K’:
+[3.871s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:126:9:[m[K [01;31m[Kerror: [m[Kinvalid ‘[01m[Kconst_cast[m[K’ from type ‘[01m[Kconst uint8_t*[m[K’ {aka ‘[01m[Kconst unsigned char*[m[K’} to type ‘[01m[Kchar*[m[K’
+[3.871s]   126 |         [01;31m[Kconst_cast<char *>(req)[m[K,
+[3.871s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.877s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:16:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krecv_buffer_[m[K’ was not declared in this scope
+[3.877s]    16 |   std::memset([01;31m[Krecv_buffer_[m[K, 0, RECV_BUFFER_SIZE);
+[3.878s]       |               [01;31m[K^~~~~~~~~~~~[m[K
+[3.883s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:[m[K In member function ‘[01m[Kvirtual int sdkeli_ls_udp::CSDKeliLsCommonUdp::[01;32m[KGetDataGram[m[K(uint8_t*, int, int*)[m[K’:
+[3.884s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:164:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kreceive_buffer[m[K’ was not declared in this scope
+[3.884s]   164 |       [01;31m[Kreceive_buffer[m[K,
+[3.884s]       |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.884s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:137:13:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuffer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.884s]   137 |   [01;35m[Kuint8_t * buffer[m[K,
+[3.885s]       |   [01;35m[K~~~~~~~~~~^~~~~~[m[K
+[3.890s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:16:32:[m[K [01;31m[Kerror: [m[K‘[01m[KRECV_BUFFER_SIZE[m[K’ was not declared in this scope
+[3.890s]    16 |   std::memset(recv_buffer_, 0, [01;31m[KRECV_BUFFER_SIZE[m[K);
+[3.890s]       |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.900s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:17:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_length_[m[K’ was not declared in this scope
+[3.900s]    17 |   [01;31m[Kdata_length_[m[K = 0;
+[3.900s]       |   [01;31m[K^~~~~~~~~~~~[m[K
+[3.914s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:[m[K In member function ‘[01m[Kint sdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KLoopOnce[m[K()[m[K’:
+[3.914s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:85:28:[m[K [01;31m[Kerror: [m[K‘[01m[Krecv_buffer_[m[K’ was not declared in this scope
+[3.914s]    85 |   int result = GetDataGram([01;31m[Krecv_buffer_[m[K, RECV_BUFFER_SIZE, &recv_len);
+[3.914s]       |                            [01;31m[K^~~~~~~~~~~~[m[K
+[3.927s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:85:42:[m[K [01;31m[Kerror: [m[K‘[01m[KRECV_BUFFER_SIZE[m[K’ was not declared in this scope
+[3.927s]    85 |   int result = GetDataGram(recv_buffer_, [01;31m[KRECV_BUFFER_SIZE[m[K, &recv_len);
+[3.927s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.946s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:107:20:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_LENGTH_H[m[K’ was not declared in this scope
+[3.947s]   107 |     ((recv_buffer_[[01;31m[KCMD_FRAME_HEADER_LENGTH_H[m[K] << 8) |
+[3.947s]       |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.965s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:108:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_LENGTH_L[m[K’ was not declared in this scope
+[3.965s]   108 |      recv_buffer_[[01;31m[KCMD_FRAME_HEADER_LENGTH_L[m[K]) -
+[3.966s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.981s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:109:6:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_DATA_START[m[K’ was not declared in this scope
+[3.981s]   109 |     ([01;31m[KCMD_FRAME_DATA_START[m[K - CMD_FRAME_HEADER_CHECK_SUM);
+[3.981s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[4.001s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:109:29:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_CHECK_SUM[m[K’ was not declared in this scope
+[4.001s]   109 |     (CMD_FRAME_DATA_START - [01;31m[KCMD_FRAME_HEADER_CHECK_SUM[m[K);
+[4.001s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.025s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:112:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_TOTAL_INDEX_H[m[K’ was not declared in this scope
+[4.025s]   112 |     (recv_buffer_[[01;31m[KCMD_FRAME_HEADER_TOTAL_INDEX_H[m[K] << 8) |
+[4.025s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.049s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:113:19:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_TOTAL_INDEX_L[m[K’ was not declared in this scope
+[4.049s]   113 |      recv_buffer_[[01;31m[KCMD_FRAME_HEADER_TOTAL_INDEX_L[m[K];
+[4.049s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.071s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:116:18:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_SUB_PKG_NUM[m[K’ was not declared in this scope
+[4.071s]   116 |     recv_buffer_[[01;31m[KCMD_FRAME_HEADER_SUB_PKG_NUM[m[K];
+[4.071s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.090s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:118:18:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_SUB_INDEX[m[K’ was not declared in this scope
+[4.091s]   118 |     recv_buffer_[[01;31m[KCMD_FRAME_HEADER_SUB_INDEX[m[K];
+[4.091s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.107s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:122:46:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_HEADER_TYPE[m[K’ was not declared in this scope
+[4.107s]   122 |        i < raw_len + (CMD_FRAME_DATA_START - [01;31m[KCMD_FRAME_HEADER_TYPE[m[K);
+[4.107s]       |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.127s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:133:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_MIN_SUB_PKG_NUM[m[K’ was not declared in this scope
+[4.127s]   133 |   if (sub_pkg_num < [01;31m[KCMD_FRAME_MIN_SUB_PKG_NUM[m[K ||
+[4.127s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.146s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:134:21:[m[K [01;31m[Kerror: [m[K‘[01m[KCMD_FRAME_MAX_SUB_PKG_NUM[m[K’ was not declared in this scope
+[4.146s]   134 |       sub_pkg_num > [01;31m[KCMD_FRAME_MAX_SUB_PKG_NUM[m[K)
+[4.146s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.155s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:139:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kdata_save_[m[K’ was not declared in this scope
+[4.155s]   139 |   [01;31m[Kdata_save_[m[K[sub_pkg_idx].totaIndexlCount = frame_index;
+[4.155s]       |   [01;31m[K^~~~~~~~~~[m[K
+[4.156s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:150:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kunsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.156s]   150 |   for (unsigned int i = 0; [01;35m[Ki < sub_pkg_num - 1[m[K; ++i)
+[4.156s]       |                            [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[4.165s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:170:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstore_buffer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetbuffer[m[K’?
+[4.165s]   170 |       [01;31m[Kstore_buffer_[m[K + total_data_len,
+[4.165s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[4.165s]       |       [32m[Ksetbuffer[m[K
+[4.175s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:195:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kstore_buffer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetbuffer[m[K’?
+[4.175s]   195 |       [01;31m[Kstore_buffer_[m[K,
+[4.176s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[4.176s]       |       [32m[Ksetbuffer[m[K
+[4.176s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:[m[K At global scope:
+[4.176s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:209:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KCheckAngleRange[m[K(sdkeli_ls_udp::SDKeliLsConfig&)[m[K’
+[4.176s]   209 | void [01;31m[KCSDKeliLsCommon[m[K::CheckAngleRange(SDKeliLsConfig & config)
+[4.176s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.177s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:209:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KCheckAngleRange[m[K(sdkeli_ls_udp::SDKeliLsConfig&)[m[K’
+[4.177s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:22:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass sdkeli_ls_udp::CSDKeliLsCommon[m[K’ defined here
+[4.177s]    22 | class [01;36m[KCSDKeliLsCommon[m[K
+[4.177s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.188s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:[m[K In member function ‘[01m[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KUpdateConfig[m[K(const sdkeli_ls_udp::SDKeliLsConfig&)[m[K’:
+[4.188s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:220:3:[m[K [01;31m[Kerror: [m[K‘[01m[KCheckAngleRange[m[K’ was not declared in this scope
+[4.189s]   220 |   [01;31m[KCheckAngleRange[m[K(config_);
+[4.189s]       |   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.189s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:[m[K At global scope:
+[4.189s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:223:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KDumpLaserMessage[m[K(sensor_msgs::msg::LaserScan&)[m[K’
+[4.189s]   223 | void [01;31m[KCSDKeliLsCommon[m[K::DumpLaserMessage(
+[4.189s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.189s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:223:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::[01;32m[KDumpLaserMessage[m[K(sensor_msgs::msg::LaserScan&)[m[K’
+[4.190s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:22:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass sdkeli_ls_udp::CSDKeliLsCommon[m[K’ defined here
+[4.190s]    22 | class [01;36m[KCSDKeliLsCommon[m[K
+[4.190s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.651s] gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:90: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o] Error 1
+[5.557s] gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:76: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o] Error 1
+[5.557s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sdkeli_ls_core.dir/all] Error 2
+[5.557s] gmake: *** [Makefile:146: all] Error 2
+[5.560s] Invoked command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --build /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp -- -j8 -l8

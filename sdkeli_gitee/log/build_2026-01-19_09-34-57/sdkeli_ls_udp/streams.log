@@ -1,0 +1,41 @@
+[0.017s] Invoking command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --build /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp -- -j8 -l8
+[0.120s] [ 14%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o[0m
+[3.623s] [ 28%] [32m[1mLinking CXX static library libsdkeli_ls_core.a[0m
+[3.714s] [ 71%] Built target sdkeli_ls_core
+[3.757s] [ 85%] [32mBuilding CXX object CMakeFiles/sdkeli_ls1207de.dir/src/sdkeli_ls1207de.cpp.o[0m
+[7.349s] [100%] [32m[1mLinking CXX executable sdkeli_ls1207de[0m
+[7.604s] [100%] Built target sdkeli_ls1207de
+[7.621s] Invoked command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --build /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp -- -j8 -l8
+[7.636s] Invoking command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --install /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp
+[7.649s] -- Install configuration: ""
+[7.649s] -- Execute custom install script
+[7.650s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/lib/libsdkeli_ls_core.a
+[7.650s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/lib/sdkeli_ls_udp/sdkeli_ls1207de
+[7.650s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/parser_base.h
+[7.650s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/sdkeli_ls1207de_parser.h
+[7.651s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/sdkeli_ls_common.h
+[7.651s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/sdkeli_ls_common_udp.h
+[7.651s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/sdkeli_ls_config.h
+[7.651s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/sdkeli_ls_constants.h
+[7.651s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/include//sdkeli_ls_udp/sdkeli_ls_sensor_frame.h
+[7.651s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/environment/library_path.sh
+[7.652s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/environment/library_path.dsv
+[7.652s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/ament_index/resource_index/package_run_dependencies/sdkeli_ls_udp
+[7.652s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/ament_index/resource_index/parent_prefix_path/sdkeli_ls_udp
+[7.653s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/environment/ament_prefix_path.sh
+[7.653s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/environment/ament_prefix_path.dsv
+[7.653s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/environment/path.sh
+[7.653s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/environment/path.dsv
+[7.654s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/local_setup.bash
+[7.654s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/local_setup.sh
+[7.654s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/local_setup.zsh
+[7.655s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/local_setup.dsv
+[7.655s] -- Symlinking: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/package.dsv
+[7.669s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/ament_index/resource_index/packages/sdkeli_ls_udp
+[7.669s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.669s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/cmake/ament_cmake_export_libraries-extras.cmake
+[7.669s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.670s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/cmake/sdkeli_ls_udpConfig.cmake
+[7.670s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/cmake/sdkeli_ls_udpConfig-version.cmake
+[7.670s] -- Up-to-date symlink: /home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp/share/sdkeli_ls_udp/package.xml
+[7.673s] Invoked command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --install /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp

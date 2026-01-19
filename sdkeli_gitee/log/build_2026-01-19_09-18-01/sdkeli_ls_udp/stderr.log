@@ -1,0 +1,27 @@
+In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_sensor_frame.cpp:1[m[K:
+[01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_sensor_frame.h:20:24:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Ksens_data[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   20 |     uint16_t sens_data[[01;35m[K0[m[K];
+      |                        [01;35m[K^[m[K
+In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls1207de_parser.h:6[m[K,
+                 from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:1[m[K:
+[01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/parser_base.h:6:10:[m[K [01;31m[Kfatal error: [m[Ksdkeli_ls_udp/sdkeli_ls_config.h: No such file or directory
+    6 | #include [01;31m[K"sdkeli_ls_udp/sdkeli_ls_config.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:104: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common_udp.h:11[m[K,
+                 from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:1[m[K:
+[01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8:10:[m[K [01;31m[Kfatal error: [m[Ksdkeli_ls_udp/parser_base.h: No such file or directory
+    8 | #include [01;31m[K"sdkeli_ls_udp/parser_base.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:1[m[K:
+[01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8:10:[m[K [01;31m[Kfatal error: [m[Ksdkeli_ls_udp/parser_base.h: No such file or directory
+    8 | #include [01;31m[K"sdkeli_ls_udp/parser_base.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:76: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:90: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sdkeli_ls_core.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

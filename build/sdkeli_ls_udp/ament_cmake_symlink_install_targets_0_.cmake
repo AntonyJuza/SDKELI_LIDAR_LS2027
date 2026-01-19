@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/tri/gitee_ws/build/sdkeli_ls_udp/libsdkeli_ls_core.a" "/home/tri/gitee_ws/build/sdkeli_ls_udp/sdkeli_ls1207de" "TARGETS" "sdkeli_ls_core" "sdkeli_ls1207de" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/sdkeli_ls_udp")

@@ -1,0 +1,65 @@
+[0.016s] Invoking command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake /home/tri/gitee_ws/sdkeli_gitee -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp
+[0.094s] -- The C compiler identification is GNU 13.3.0
+[0.168s] -- The CXX compiler identification is GNU 13.3.0
+[0.190s] -- Detecting C compiler ABI info
+[0.313s] -- Detecting C compiler ABI info - done
+[0.330s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.330s] -- Detecting C compile features
+[0.331s] -- Detecting C compile features - done
+[0.346s] -- Detecting CXX compiler ABI info
+[0.486s] -- Detecting CXX compiler ABI info - done
+[0.499s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.500s] -- Detecting CXX compile features
+[0.500s] -- Detecting CXX compile features - done
+[0.509s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.760s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.855s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.972s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.072s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.104s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.141s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.180s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.327s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.337s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.472s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.500s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.532s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.667s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.770s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0")  
+[1.892s] -- Configuring done (1.9s)
+[1.912s] -- Generating done (0.0s)
+[1.917s] -- Build files have been written to: /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp
+[1.928s] Invoked command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake /home/tri/gitee_ws/sdkeli_gitee -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/tri/gitee_ws/sdkeli_gitee/install/sdkeli_ls_udp
+[1.930s] Invoking command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --build /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp -- -j8 -l8
+[2.007s] [ 28%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o[0m
+[2.007s] [ 28%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o[0m
+[2.007s] [ 42%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o[0m
+[2.008s] [ 57%] [32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_sensor_frame.cpp.o[0m
+[2.060s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_sensor_frame.cpp:1[m[K:
+[2.060s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_sensor_frame.h:20:24:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Ksens_data[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+[2.060s]    20 |     uint16_t sens_data[[01;35m[K0[m[K];
+[2.060s]       |                        [01;35m[K^[m[K
+[2.103s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls1207de_parser.h:6[m[K,
+[2.103s]                  from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:1[m[K:
+[2.103s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/parser_base.h:6:10:[m[K [01;31m[Kfatal error: [m[Ksdkeli_ls_udp/sdkeli_ls_config.h: No such file or directory
+[2.104s]     6 | #include [01;31m[K"sdkeli_ls_udp/sdkeli_ls_config.h"[m[K
+[2.104s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.104s] compilation terminated.
+[2.104s] gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:104: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o] Error 1
+[2.104s] gmake[2]: *** Waiting for unfinished jobs....
+[2.368s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common_udp.h:11[m[K,
+[2.369s]                  from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:1[m[K:
+[2.369s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8:10:[m[K [01;31m[Kfatal error: [m[Ksdkeli_ls_udp/parser_base.h: No such file or directory
+[2.369s]     8 | #include [01;31m[K"sdkeli_ls_udp/parser_base.h"[m[K
+[2.369s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.369s] In file included from [01m[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:1[m[K:
+[2.369s] [01m[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8:10:[m[K [01;31m[Kfatal error: [m[Ksdkeli_ls_udp/parser_base.h: No such file or directory
+[2.369s]     8 | #include [01;31m[K"sdkeli_ls_udp/parser_base.h"[m[K
+[2.369s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.369s] compilation terminated.
+[2.369s] compilation terminated.
+[2.375s] gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:76: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o] Error 1
+[2.375s] gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:90: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o] Error 1
+[2.375s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sdkeli_ls_core.dir/all] Error 2
+[2.375s] gmake: *** [Makefile:146: all] Error 2
+[2.378s] Invoked command in '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy /usr/bin/cmake --build /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp -- -j8 -l8

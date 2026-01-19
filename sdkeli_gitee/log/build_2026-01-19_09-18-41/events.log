@@ -1,0 +1,246 @@
+[0.000000] (-) TimerEvent: {}
+[0.000173] (sdkeli_ls_udp) JobQueued: {'identifier': 'sdkeli_ls_udp', 'dependencies': OrderedDict()}
+[0.000244] (sdkeli_ls_udp) JobStarted: {'identifier': 'sdkeli_ls_udp'}
+[0.013640] (sdkeli_ls_udp) JobProgress: {'identifier': 'sdkeli_ls_udp', 'progress': 'cmake'}
+[0.014410] (sdkeli_ls_udp) JobProgress: {'identifier': 'sdkeli_ls_udp', 'progress': 'build'}
+[0.015158] (sdkeli_ls_udp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp', '--', '-j8', '-l8'], 'cwd': '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'tri', 'SSH_CLIENT': '192.168.1.46 49308 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/tri/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/tri/structure_ws/install/structure_core_ros2_driver/lib:/home/tri/structure_ws/install/StructureSDK-CrossPlatform/lib:/home/tri/structure_ws/install/image_transport/lib:/home/tri/structure_ws/install/camera_info_manager/lib:/home/tri/structure_ws/install/camera_calibration_parsers/lib:/home/tri/ros2_ws/install/rtabmap_slam/lib:/home/tri/ros2_ws/install/rtabmap_odom/lib:/home/tri/ros2_ws/install/rtabmap_util/lib:/home/tri/ros2_ws/install/rtabmap_sync/lib:/home/tri/ros2_ws/install/rtabmap_rviz_plugins/lib:/home/tri/ros2_ws/install/rtabmap_conversions/lib:/home/tri/ros2_ws/install/rtabmap_msgs/lib:/home/tri/ros2_ws/install/rtabmap/lib:/home/tri/uros_ws/install/micro_ros_agent/lib:/home/tri/uros_ws/install/micro_ros_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/tri/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/helpers/browser.sh', 'HOME': '/home/tri', 'OLDPWD': '/home/tri/gitee_ws', 'TERM_PROGRAM_VERSION': '1.107.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-93969c20-9e7c-4e27-a611-a3b58416bab0.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/tri/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/tri/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/tri/sdkeli_ros2/install:/home/tri/structure_ws/install:/home/tri/ros2_ws/install:/home/tri/uros_ws/install:/home/tri/car_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'tri', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/tri/ros2_ws/install/rtabmap/lib/x86_64-linux-gnu/pkgconfig:/home/tri/ros2_ws/install/rtabmap/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/tri/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/tri/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/tri/.vscode-server/cli/servers/Stable-994fd12f8d3a5aa16f17d42c041e5809167e845a/server/bin/remote-cli:/home/tri/.local/bin:/home/tri/ros2_ws/install/rtabmap/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/tri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-1089a4ee83.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/tri/sdkeli_ros2/install/sdkeli_ros2:/home/tri/structure_ws/install/structure_core_ros2_driver:/home/tri/structure_ws/install/image_common:/home/tri/structure_ws/install/image_transport:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/structure_ws/install/camera_info_manager:/home/tri/structure_ws/install/camera_calibration_parsers:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_ros:/home/tri/ros2_ws/install/rtabmap_launch:/home/tri/ros2_ws/install/rtabmap_examples:/home/tri/ros2_ws/install/rtabmap_demos:/home/tri/ros2_ws/install/rtabmap_viz:/home/tri/ros2_ws/install/rtabmap_slam:/home/tri/ros2_ws/install/rtabmap_odom:/home/tri/ros2_ws/install/rtabmap_util:/home/tri/ros2_ws/install/rtabmap_sync:/home/tri/ros2_ws/install/rtabmap_rviz_plugins:/home/tri/ros2_ws/install/rtabmap_python:/home/tri/ros2_ws/install/rtabmap_conversions:/home/tri/ros2_ws/install/rtabmap_msgs:/home/tri/uros_ws/install/micro_ros_setup:/home/tri/uros_ws/install/micro_ros_agent:/home/tri/uros_ws/install/micro_ros_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'PWD': '/home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.46 49308 192.168.1.76 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tri/structure_ws/build/camera_info_manager_py:/home/tri/structure_ws/install/camera_info_manager_py/lib/python3.12/site-packages:/home/tri/ros2_ws/install/sdkeli_test/lib/python3.12/site-packages:/home/tri/ros2_ws/install/rtabmap_python/lib/python3.12/site-packages:/home/tri/ros2_ws/install/rtabmap_msgs/lib/python3.12/site-packages:/home/tri/uros_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/tri/sdkeli_ros2/install/sdkeli_ros2:/home/tri/structure_ws/install/structure_core_ros2_driver:/home/tri/structure_ws/install/image_common:/home/tri/structure_ws/install/StructureSDK-CrossPlatform:/home/tri/structure_ws/install/image_transport:/home/tri/structure_ws/install/camera_info_manager:/home/tri/structure_ws/install/camera_calibration_parsers:/home/tri/ros2_ws/install/rtabmap_ros:/home/tri/ros2_ws/install/rtabmap_launch:/home/tri/ros2_ws/install/rtabmap_examples:/home/tri/ros2_ws/install/rtabmap_demos:/home/tri/ros2_ws/install/rtabmap_viz:/home/tri/ros2_ws/install/rtabmap_slam:/home/tri/ros2_ws/install/rtabmap_odom:/home/tri/ros2_ws/install/rtabmap_util:/home/tri/ros2_ws/install/rtabmap_sync:/home/tri/ros2_ws/install/rtabmap_rviz_plugins:/home/tri/ros2_ws/install/rtabmap_conversions:/home/tri/ros2_ws/install/rtabmap_msgs:/home/tri/ros2_ws/install/rtabmap:/home/tri/uros_ws/install/micro_ros_setup:/home/tri/uros_ws/install/micro_ros_agent:/home/tri/uros_ws/install/micro_ros_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/tri/structure_ws/install/camera_info_manager_py:/home/tri/ros2_ws/install/sdkeli_test:/home/tri/ros2_ws/install/rtabmap_python:/opt/ros/jazzy'}), 'shell': False}
+[0.056753] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099165] (-) TimerEvent: {}
+[0.199460] (-) TimerEvent: {}
+[0.299767] (-) TimerEvent: {}
+[0.329850] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.339822] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.379873] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.392185] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.399887] (-) TimerEvent: {}
+[0.408857] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.428476] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500018] (-) TimerEvent: {}
+[0.510208] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.512799] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.599721] (sdkeli_ls_udp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.600101] (-) TimerEvent: {}
+[0.690723] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.700212] (-) TimerEvent: {}
+[0.800470] (-) TimerEvent: {}
+[0.894722] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.900593] (-) TimerEvent: {}
+[0.914515] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.920562] (sdkeli_ls_udp) StdoutLine: {'line': b'-- Build files have been written to: /home/tri/gitee_ws/sdkeli_gitee/build/sdkeli_ls_udp\n'}
+[0.975074] (sdkeli_ls_udp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o\x1b[0m\n'}
+[0.975392] (sdkeli_ls_udp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o\x1b[0m\n'}
+[0.975609] (sdkeli_ls_udp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o\x1b[0m\n'}
+[1.000733] (-) TimerEvent: {}
+[1.101045] (-) TimerEvent: {}
+[1.201329] (-) TimerEvent: {}
+[1.301648] (-) TimerEvent: {}
+[1.401964] (-) TimerEvent: {}
+[1.502283] (-) TimerEvent: {}
+[1.579970] (sdkeli_ls_udp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:2\x1b[m\x1b[K:\n'}
+[1.580270] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_sensor_frame.h:20:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids zero-size array \xe2\x80\x98\x1b[01m\x1b[Ksens_data\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic\x07-Wpedantic\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.580443] (sdkeli_ls_udp) StderrLine: {'line': b'   20 |     uint16_t sens_data[\x1b[01;35m\x1b[K0\x1b[m\x1b[K];\n'}
+[1.580594] (sdkeli_ls_udp) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.602401] (-) TimerEvent: {}
+[1.635029] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int sdkeli_ls_udp::CSDKeliLs1207DEParser::\x1b[01;32m\x1b[KParse\x1b[m\x1b[K(const uint8_t*, size_t, sdkeli_ls_udp::SDKeliLsConfig&, sensor_msgs::msg::LaserScan&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.635247] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:135:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.635353] (sdkeli_ls_udp) StderrLine: {'line': b'  135 |   \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::Time stamp = rclcpp::Clock().now();\n'}
+[1.635444] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.639850] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:136:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstamp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.640402] (sdkeli_ls_udp) StderrLine: {'line': b'  136 |   \x1b[01;31m\x1b[Kstamp\x1b[m\x1b[K = stamp - rclcpp::Duration::from_seconds(scan_duration);\n'}
+[1.640517] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.640611] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:136:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.640708] (sdkeli_ls_udp) StderrLine: {'line': b'  136 |   stamp = stamp - \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::Duration::from_seconds(scan_duration);\n'}
+[1.640798] (sdkeli_ls_udp) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.640885] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:138:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.640973] (sdkeli_ls_udp) StderrLine: {'line': b'  138 |           \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::Duration::from_seconds(\n'}
+[1.641071] (sdkeli_ls_udp) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.641235] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls1207de_parser.cpp:141:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[1.641333] (sdkeli_ls_udp) StderrLine: {'line': b'  141 |           \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::Duration::from_seconds(config.time_offset);\n'}
+[1.641432] (sdkeli_ls_udp) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.702533] (-) TimerEvent: {}
+[1.752841] (sdkeli_ls_udp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:104: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o] Error 1\n'}
+[1.753033] (sdkeli_ls_udp) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[1.802666] (-) TimerEvent: {}
+[1.902958] (-) TimerEvent: {}
+[2.003265] (-) TimerEvent: {}
+[2.103550] (-) TimerEvent: {}
+[2.203839] (-) TimerEvent: {}
+[2.304128] (-) TimerEvent: {}
+[2.404419] (-) TimerEvent: {}
+[2.504718] (-) TimerEvent: {}
+[2.605020] (-) TimerEvent: {}
+[2.705282] (-) TimerEvent: {}
+[2.805569] (-) TimerEvent: {}
+[2.905863] (-) TimerEvent: {}
+[3.006168] (-) TimerEvent: {}
+[3.106454] (-) TimerEvent: {}
+[3.206749] (-) TimerEvent: {}
+[3.307021] (-) TimerEvent: {}
+[3.407322] (-) TimerEvent: {}
+[3.507629] (-) TimerEvent: {}
+[3.607926] (-) TimerEvent: {}
+[3.708236] (-) TimerEvent: {}
+[3.792176] (sdkeli_ls_udp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common_udp.h:11\x1b[m\x1b[K,\n'}
+[3.792373] (sdkeli_ls_udp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:1\x1b[m\x1b[K:\n'}
+[3.792472] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:15:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum sdkeli_ls_udp::ExitCode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.792577] (sdkeli_ls_udp) StderrLine: {'line': b'   15 | enum \x1b[01;31m\x1b[KExitCode\x1b[m\x1b[K\n'}
+[3.792665] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.792751] (sdkeli_ls_udp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8\x1b[m\x1b[K:\n'}
+[3.792835] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/parser_base.h:12:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[3.792920] (sdkeli_ls_udp) StderrLine: {'line': b'   12 | enum \x1b[01;36m\x1b[KExitCode\x1b[m\x1b[K\n'}
+[3.793005] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.793488] (sdkeli_ls_udp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:1\x1b[m\x1b[K:\n'}
+[3.793636] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:15:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmultiple definition of \xe2\x80\x98\x1b[01m\x1b[Kenum sdkeli_ls_udp::ExitCode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.793734] (sdkeli_ls_udp) StderrLine: {'line': b'   15 | enum \x1b[01;31m\x1b[KExitCode\x1b[m\x1b[K\n'}
+[3.793822] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.793908] (sdkeli_ls_udp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:8\x1b[m\x1b[K:\n'}
+[3.793994] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/parser_base.h:12:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition here\n'}
+[3.794102] (sdkeli_ls_udp) StderrLine: {'line': b'   12 | enum \x1b[01;36m\x1b[KExitCode\x1b[m\x1b[K\n'}
+[3.794198] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.806825] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:31:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_MAX_LEN\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.807019] (sdkeli_ls_udp) StderrLine: {'line': b'   31 |     unsigned char sens_data[\x1b[01;31m\x1b[KCMD_FRAME_MAX_LEN\x1b[m\x1b[K];\n'}
+[3.807156] (sdkeli_ls_udp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.808305] (-) TimerEvent: {}
+[3.809474] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:31:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_MAX_LEN\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.809648] (sdkeli_ls_udp) StderrLine: {'line': b'   31 |     unsigned char sens_data[\x1b[01;31m\x1b[KCMD_FRAME_MAX_LEN\x1b[m\x1b[K];\n'}
+[3.809746] (sdkeli_ls_udp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.830191] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:75:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.830392] (sdkeli_ls_udp) StderrLine: {'line': b'   75 |   uint8_t recv_buffer_[\x1b[01;31m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K];\n'}
+[3.830492] (sdkeli_ls_udp) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.833092] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:75:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.833268] (sdkeli_ls_udp) StderrLine: {'line': b'   75 |   uint8_t recv_buffer_[\x1b[01;31m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K];\n'}
+[3.833367] (sdkeli_ls_udp) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.843909] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:76:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.844150] (sdkeli_ls_udp) StderrLine: {'line': b'   76 |   uint8_t store_buffer_[\x1b[01;31m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K];\n'}
+[3.844257] (sdkeli_ls_udp) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.846646] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:76:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.846819] (sdkeli_ls_udp) StderrLine: {'line': b'   76 |   uint8_t store_buffer_[\x1b[01;31m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K];\n'}
+[3.846919] (sdkeli_ls_udp) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.864239] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:77:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_MAX_SUB_PKG_NUM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.864440] (sdkeli_ls_udp) StderrLine: {'line': b'   77 |   dataSaveSt data_save_[\x1b[01;31m\x1b[KCMD_FRAME_MAX_SUB_PKG_NUM\x1b[m\x1b[K];\n'}
+[3.864542] (sdkeli_ls_udp) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.866511] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:77:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_MAX_SUB_PKG_NUM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.866746] (sdkeli_ls_udp) StderrLine: {'line': b'   77 |   dataSaveSt data_save_[\x1b[01;31m\x1b[KCMD_FRAME_MAX_SUB_PKG_NUM\x1b[m\x1b[K];\n'}
+[3.866915] (sdkeli_ls_udp) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.867168] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Ksdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KCSDKeliLsCommon\x1b[m\x1b[K(sdkeli_ls_udp::CParserBase*, const rclcpp::Node::SharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.867347] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:14:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Ksdkeli_ls_udp::CSDKeliLsCommon\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kexpected_freq_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.867512] (sdkeli_ls_udp) StderrLine: {'line': b'   14 |   \x1b[01;31m\x1b[Kexpected_freq_\x1b[m\x1b[K(15.0)\n'}
+[3.867656] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.870471] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int sdkeli_ls_udp::CSDKeliLsCommonUdp::\x1b[01;32m\x1b[KSendDeviceReq\x1b[m\x1b[K(const uint8_t*, size_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.870717] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:126:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid \xe2\x80\x98\x1b[01m\x1b[Kconst_cast\x1b[m\x1b[K\xe2\x80\x99 from type \xe2\x80\x98\x1b[01m\x1b[Kconst uint8_t*\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst unsigned char*\x1b[m\x1b[K\xe2\x80\x99} to type \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.870880] (sdkeli_ls_udp) StderrLine: {'line': b'  126 |         \x1b[01;31m\x1b[Kconst_cast<char *>(req)\x1b[m\x1b[K,\n'}
+[3.871030] (sdkeli_ls_udp) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.877381] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:16:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krecv_buffer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.877646] (sdkeli_ls_udp) StderrLine: {'line': b'   16 |   std::memset(\x1b[01;31m\x1b[Krecv_buffer_\x1b[m\x1b[K, 0, RECV_BUFFER_SIZE);\n'}
+[3.877804] (sdkeli_ls_udp) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.883584] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual int sdkeli_ls_udp::CSDKeliLsCommonUdp::\x1b[01;32m\x1b[KGetDataGram\x1b[m\x1b[K(uint8_t*, int, int*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.883828] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:164:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kreceive_buffer\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.884003] (sdkeli_ls_udp) StderrLine: {'line': b'  164 |       \x1b[01;31m\x1b[Kreceive_buffer\x1b[m\x1b[K,\n'}
+[3.884169] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.884397] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common_udp.cpp:137:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuffer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.884567] (sdkeli_ls_udp) StderrLine: {'line': b'  137 |   \x1b[01;35m\x1b[Kuint8_t * buffer\x1b[m\x1b[K,\n'}
+[3.884712] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.889841] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:16:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.890107] (sdkeli_ls_udp) StderrLine: {'line': b'   16 |   std::memset(recv_buffer_, 0, \x1b[01;31m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K);\n'}
+[3.890289] (sdkeli_ls_udp) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.899746] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:17:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdata_length_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.900010] (sdkeli_ls_udp) StderrLine: {'line': b'   17 |   \x1b[01;31m\x1b[Kdata_length_\x1b[m\x1b[K = 0;\n'}
+[3.900191] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.908435] (-) TimerEvent: {}
+[3.913791] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint sdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KLoopOnce\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.914065] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:85:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krecv_buffer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.914262] (sdkeli_ls_udp) StderrLine: {'line': b'   85 |   int result = GetDataGram(\x1b[01;31m\x1b[Krecv_buffer_\x1b[m\x1b[K, RECV_BUFFER_SIZE, &recv_len);\n'}
+[3.914416] (sdkeli_ls_udp) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.926856] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:85:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.927125] (sdkeli_ls_udp) StderrLine: {'line': b'   85 |   int result = GetDataGram(recv_buffer_, \x1b[01;31m\x1b[KRECV_BUFFER_SIZE\x1b[m\x1b[K, &recv_len);\n'}
+[3.927291] (sdkeli_ls_udp) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.946511] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:107:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_LENGTH_H\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.946781] (sdkeli_ls_udp) StderrLine: {'line': b'  107 |     ((recv_buffer_[\x1b[01;31m\x1b[KCMD_FRAME_HEADER_LENGTH_H\x1b[m\x1b[K] << 8) |\n'}
+[3.946938] (sdkeli_ls_udp) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.965264] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:108:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_LENGTH_L\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.965535] (sdkeli_ls_udp) StderrLine: {'line': b'  108 |      recv_buffer_[\x1b[01;31m\x1b[KCMD_FRAME_HEADER_LENGTH_L\x1b[m\x1b[K]) -\n'}
+[3.965708] (sdkeli_ls_udp) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.980759] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:109:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_DATA_START\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.981041] (sdkeli_ls_udp) StderrLine: {'line': b'  109 |     (\x1b[01;31m\x1b[KCMD_FRAME_DATA_START\x1b[m\x1b[K - CMD_FRAME_HEADER_CHECK_SUM);\n'}
+[3.981220] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.000837] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:109:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_CHECK_SUM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.001118] (sdkeli_ls_udp) StderrLine: {'line': b'  109 |     (CMD_FRAME_DATA_START - \x1b[01;31m\x1b[KCMD_FRAME_HEADER_CHECK_SUM\x1b[m\x1b[K);\n'}
+[4.001289] (sdkeli_ls_udp) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.008561] (-) TimerEvent: {}
+[4.025056] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:112:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_TOTAL_INDEX_H\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.025331] (sdkeli_ls_udp) StderrLine: {'line': b'  112 |     (recv_buffer_[\x1b[01;31m\x1b[KCMD_FRAME_HEADER_TOTAL_INDEX_H\x1b[m\x1b[K] << 8) |\n'}
+[4.025492] (sdkeli_ls_udp) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.048714] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:113:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_TOTAL_INDEX_L\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.048980] (sdkeli_ls_udp) StderrLine: {'line': b'  113 |      recv_buffer_[\x1b[01;31m\x1b[KCMD_FRAME_HEADER_TOTAL_INDEX_L\x1b[m\x1b[K];\n'}
+[4.049159] (sdkeli_ls_udp) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.070698] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:116:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_SUB_PKG_NUM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.070985] (sdkeli_ls_udp) StderrLine: {'line': b'  116 |     recv_buffer_[\x1b[01;31m\x1b[KCMD_FRAME_HEADER_SUB_PKG_NUM\x1b[m\x1b[K];\n'}
+[4.071162] (sdkeli_ls_udp) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.090593] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:118:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_SUB_INDEX\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.090853] (sdkeli_ls_udp) StderrLine: {'line': b'  118 |     recv_buffer_[\x1b[01;31m\x1b[KCMD_FRAME_HEADER_SUB_INDEX\x1b[m\x1b[K];\n'}
+[4.091004] (sdkeli_ls_udp) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.106693] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:122:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_HEADER_TYPE\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.106961] (sdkeli_ls_udp) StderrLine: {'line': b'  122 |        i < raw_len + (CMD_FRAME_DATA_START - \x1b[01;31m\x1b[KCMD_FRAME_HEADER_TYPE\x1b[m\x1b[K);\n'}
+[4.107137] (sdkeli_ls_udp) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.108675] (-) TimerEvent: {}
+[4.126807] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:133:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_MIN_SUB_PKG_NUM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.127076] (sdkeli_ls_udp) StderrLine: {'line': b'  133 |   if (sub_pkg_num < \x1b[01;31m\x1b[KCMD_FRAME_MIN_SUB_PKG_NUM\x1b[m\x1b[K ||\n'}
+[4.127271] (sdkeli_ls_udp) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.146148] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:134:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCMD_FRAME_MAX_SUB_PKG_NUM\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.146420] (sdkeli_ls_udp) StderrLine: {'line': b'  134 |       sub_pkg_num > \x1b[01;31m\x1b[KCMD_FRAME_MAX_SUB_PKG_NUM\x1b[m\x1b[K)\n'}
+[4.146579] (sdkeli_ls_udp) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.155135] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:139:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdata_save_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.155446] (sdkeli_ls_udp) StderrLine: {'line': b'  139 |   \x1b[01;31m\x1b[Kdata_save_\x1b[m\x1b[K[sub_pkg_idx].totaIndexlCount = frame_index;\n'}
+[4.155608] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.155756] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:150:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.155910] (sdkeli_ls_udp) StderrLine: {'line': b'  150 |   for (unsigned int i = 0; \x1b[01;35m\x1b[Ki < sub_pkg_num - 1\x1b[m\x1b[K; ++i)\n'}
+[4.156054] (sdkeli_ls_udp) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.165016] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:170:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstore_buffer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksetbuffer\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.165290] (sdkeli_ls_udp) StderrLine: {'line': b'  170 |       \x1b[01;31m\x1b[Kstore_buffer_\x1b[m\x1b[K + total_data_len,\n'}
+[4.165451] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.165599] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ksetbuffer\x1b[m\x1b[K\n'}
+[4.175410] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:195:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstore_buffer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksetbuffer\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.175686] (sdkeli_ls_udp) StderrLine: {'line': b'  195 |       \x1b[01;31m\x1b[Kstore_buffer_\x1b[m\x1b[K,\n'}
+[4.175843] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.175990] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[32m\x1b[Ksetbuffer\x1b[m\x1b[K\n'}
+[4.176233] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.176398] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:209:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KCheckAngleRange\x1b[m\x1b[K(sdkeli_ls_udp::SDKeliLsConfig&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.176547] (sdkeli_ls_udp) StderrLine: {'line': b'  209 | void \x1b[01;31m\x1b[KCSDKeliLsCommon\x1b[m\x1b[K::CheckAngleRange(SDKeliLsConfig & config)\n'}
+[4.176691] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.176832] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:209:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KCheckAngleRange\x1b[m\x1b[K(sdkeli_ls_udp::SDKeliLsConfig&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.176977] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:22:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass sdkeli_ls_udp::CSDKeliLsCommon\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[4.177139] (sdkeli_ls_udp) StderrLine: {'line': b'   22 | class \x1b[01;36m\x1b[KCSDKeliLsCommon\x1b[m\x1b[K\n'}
+[4.177290] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.188351] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KUpdateConfig\x1b[m\x1b[K(const sdkeli_ls_udp::SDKeliLsConfig&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.188632] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:220:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCheckAngleRange\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.188791] (sdkeli_ls_udp) StderrLine: {'line': b'  220 |   \x1b[01;31m\x1b[KCheckAngleRange\x1b[m\x1b[K(config_);\n'}
+[4.188939] (sdkeli_ls_udp) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.189092] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.189251] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:223:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KDumpLaserMessage\x1b[m\x1b[K(sensor_msgs::msg::LaserScan&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.189401] (sdkeli_ls_udp) StderrLine: {'line': b'  223 | void \x1b[01;31m\x1b[KCSDKeliLsCommon\x1b[m\x1b[K::DumpLaserMessage(\n'}
+[4.189548] (sdkeli_ls_udp) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.189697] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/src/sdkeli_ls_common.cpp:223:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid sdkeli_ls_udp::CSDKeliLsCommon::\x1b[01;32m\x1b[KDumpLaserMessage\x1b[m\x1b[K(sensor_msgs::msg::LaserScan&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.189847] (sdkeli_ls_udp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_common.h:22:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass sdkeli_ls_udp::CSDKeliLsCommon\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[4.189991] (sdkeli_ls_udp) StderrLine: {'line': b'   22 | class \x1b[01;36m\x1b[KCSDKeliLsCommon\x1b[m\x1b[K\n'}
+[4.190146] (sdkeli_ls_udp) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.208818] (-) TimerEvent: {}
+[4.309150] (-) TimerEvent: {}
+[4.409460] (-) TimerEvent: {}
+[4.509778] (-) TimerEvent: {}
+[4.610131] (-) TimerEvent: {}
+[4.651602] (sdkeli_ls_udp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:90: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o] Error 1\n'}
+[4.710267] (-) TimerEvent: {}
+[4.810584] (-) TimerEvent: {}
+[4.910896] (-) TimerEvent: {}
+[5.011213] (-) TimerEvent: {}
+[5.111529] (-) TimerEvent: {}
+[5.211845] (-) TimerEvent: {}
+[5.312154] (-) TimerEvent: {}
+[5.412480] (-) TimerEvent: {}
+[5.512809] (-) TimerEvent: {}
+[5.557041] (sdkeli_ls_udp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sdkeli_ls_core.dir/build.make:76: CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o] Error 1\n'}
+[5.557367] (sdkeli_ls_udp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sdkeli_ls_core.dir/all] Error 2\n'}
+[5.557616] (sdkeli_ls_udp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.559949] (sdkeli_ls_udp) CommandEnded: {'returncode': 2}
+[5.569200] (sdkeli_ls_udp) JobEnded: {'identifier': 'sdkeli_ls_udp', 'rc': 2}
+[5.579881] (-) EventReactorShutdown: {}

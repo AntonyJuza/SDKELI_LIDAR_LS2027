@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsdkeli_ls_core.a CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common.cpp.o CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_common_udp.cpp.o CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls1207de_parser.cpp.o CMakeFiles/sdkeli_ls_core.dir/src/sdkeli_ls_sensor_frame.cpp.o
+/usr/bin/ranlib libsdkeli_ls_core.a

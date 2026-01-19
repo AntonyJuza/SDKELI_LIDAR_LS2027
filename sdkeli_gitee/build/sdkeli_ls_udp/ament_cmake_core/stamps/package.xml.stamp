@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sdkeli_ls_udp</name>
+  <version>0.0.1</version>
+
+  <description>
+    ROS2 driver for SDKELI LS series laser scanners (UDP-based).
+  </description>
+
+  <maintainer email="shimzhao@todo.todo">shimzhao</maintainer>
+  <license>MIT</license>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS2 dependencies -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <!-- System dependencies -->
+  <build_depend>libusb-1.0-dev</build_depend>
+  <exec_depend>libusb-1.0</exec_depend>
+
+  <!-- Optional testing -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
