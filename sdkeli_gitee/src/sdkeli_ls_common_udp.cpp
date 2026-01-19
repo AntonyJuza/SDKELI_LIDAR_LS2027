@@ -128,15 +128,6 @@ void CSDKeliLsCommonUdp::send_start()
   RCLCPP_INFO(node_->get_logger(), "START command sent to LiDAR");
 }
 
-void CSDKeliLsCommonUdp::send_stop()
-{
-  const uint8_t cmd[] = {0xFA, 0x5A, 0xA5, 0xAA, 0x00, 0x02, 0x02, 0x02};
-  sendto(socket_fd_, cmd, sizeof(cmd), 0,
-         (sockaddr*)&remote_addr_, sizeof(remote_addr_));
-
-  RCLCPP_INFO(node_->get_logger(), "STOP command sent to LiDAR");
-}
-
 int CSDKeliLsCommonUdp::SendDeviceReq(
   const uint8_t * req,
   size_t len)

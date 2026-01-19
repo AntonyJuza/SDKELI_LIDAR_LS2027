@@ -57,7 +57,7 @@ int CSDKeliLsCommon::Init()
 
 int CSDKeliLsCommon::InitScanner()
 {
-  // Start command sent in InitDevice
+  SendDeviceReq(CMD_START_STREAM_DATA, sizeof(CMD_START_STREAM_DATA));
   return ExitSuccess;
 }
 
