@@ -82,6 +82,13 @@ int CSDKeliLsCommonUdp::InitDevice()
   }
 
   ClearConnectFlag();
+
+  RCLCPP_INFO(node_->get_logger(), "UDP connection ready");
+
+  // ✅ AUTO START
+  send_start();
+  connect_flag_ = true;
+
   return ExitSuccess;
 }
 
@@ -110,6 +117,15 @@ int CSDKeliLsCommonUdp::SendUdpData2Device(char * buf, int length)
     0,
     (struct sockaddr *)&remote_addr_,
     sizeof(remote_addr_));
+}
+
+void CSDKeliLsCommonUdp::send_start()
+{
+  const uint8_t cmd[] = {0xFA, 0x5A, 0xA5, 0xAA, 0x00, 0x02, 0x01, 0x01};
+  sendto(socket_fd_, cmd, sizeof(cmd), 0,
+         (sockaddr*)&remote_addr_, sizeof(remote_addr_));
+
+  RCLCPP_INFO(node_->get_logger(), "START command sent to LiDAR");
 }
 
 int CSDKeliLsCommonUdp::SendDeviceReq(
