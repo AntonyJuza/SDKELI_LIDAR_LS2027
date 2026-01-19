@@ -40,6 +40,9 @@ protected:
 
   int SendUdpData2Device(char * buf, int length);
 
+  void send_start();
+  void send_stop();
+
 private:
   int socket_fd_ {-1};
 
