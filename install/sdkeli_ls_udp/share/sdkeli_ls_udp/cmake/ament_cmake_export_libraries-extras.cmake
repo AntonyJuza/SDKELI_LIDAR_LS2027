@@ -1,1 +1,0 @@
-/home/tri/gitee_ws/build/sdkeli_ls_udp/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

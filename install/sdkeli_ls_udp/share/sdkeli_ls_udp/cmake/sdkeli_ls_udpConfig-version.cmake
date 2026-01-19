@@ -1,1 +1,0 @@
-/home/tri/gitee_ws/build/sdkeli_ls_udp/ament_cmake_core/sdkeli_ls_udpConfig-version.cmake

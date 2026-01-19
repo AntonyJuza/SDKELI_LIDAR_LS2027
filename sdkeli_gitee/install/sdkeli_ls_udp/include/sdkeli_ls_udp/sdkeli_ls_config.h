@@ -1,1 +1,0 @@
-/home/tri/gitee_ws/sdkeli_gitee/include/sdkeli_ls_udp/sdkeli_ls_config.h
