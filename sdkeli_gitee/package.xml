@@ -7,7 +7,7 @@
     ROS2 driver for SDKELI LS series laser scanners (UDP-based).
   </description>
 
-  <maintainer email="shimzhao@todo.todo">shimzhao</maintainer>
+  <maintainer email="antonyjuza@gmail.com">Antony</maintainer>
   <license>MIT</license>
 
   <!-- Build system -->
