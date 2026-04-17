@@ -1,6 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 
 #include "sdkeli_ls_common_udp.h"
+#include "sdkeli_ls_config.h"
 #include "sdkeli_ls1207de_parser.h"
 
 using namespace sdkeli_ls_udp;
@@ -22,6 +23,8 @@ int main(int argc, char ** argv)
   node->declare_parameter<double>("range_max", 10.0);
   node->declare_parameter<double>("time_increment", -1.0);
   node->declare_parameter<std::string>("frame_id", "laser");
+  // New: expose skip parameter to down‑sample scans
+  node->declare_parameter<int>("skip", 0);
 
   /* Read parameters */
   std::string hostname;
@@ -81,6 +84,13 @@ int main(int argc, char ** argv)
       parser.get(),
       node);
 
+    // Apply skip configuration (if any)
+    int skip_val = 0;
+    if (node->get_parameter("skip", skip_val)) {
+      sdkeli_ls_udp::SDKeliLsConfig cfg;
+      cfg.skip = skip_val;
+      driver->UpdateConfig(cfg);
+    }
     result = driver->Init();
 
     while (rclcpp::ok() && result == ExitSuccess)
