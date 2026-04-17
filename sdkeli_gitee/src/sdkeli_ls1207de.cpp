@@ -1,7 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 
 #include "sdkeli_ls_common_udp.h"
-#include "sdkeli_ls_config.h"
+#include "sdkeli_ls_udp/sdkeli_ls_config.h"
 #include "sdkeli_ls1207de_parser.h"
 
 using namespace sdkeli_ls_udp;
@@ -69,28 +69,23 @@ int main(int argc, char ** argv)
 
   /* Driver loop */
   int result = ExitError;
-  std::unique_ptr<CSDKeliLsCommon> driver;
+  auto driver = std::make_unique<CSDKeliLsCommonUdp>(
+    hostname,
+    port,
+    time_limit,
+    parser.get(),
+    node);
+
+  // Apply skip configuration (read ROS2 param and update driver config)
+  int skip_val = node->get_parameter("skip").as_int();
+  sdkeli_ls_udp::SDKeliLsConfig cfg;
+  cfg.skip = skip_val;
+  driver->UpdateConfig(cfg);
 
   rclcpp::Rate rate(200);  // fast loop, UDP driven
 
   while (rclcpp::ok())
   {
-    driver.reset();
-
-    driver = std::make_unique<CSDKeliLsCommonUdp>(
-      hostname,
-      port,
-      time_limit,
-      parser.get(),
-      node);
-
-    // Apply skip configuration (if any)
-    int skip_val = 0;
-    if (node->get_parameter("skip", skip_val)) {
-      sdkeli_ls_udp::SDKeliLsConfig cfg;
-      cfg.skip = skip_val;
-      driver->UpdateConfig(cfg);
-    }
     result = driver->Init();
 
     while (rclcpp::ok() && result == ExitSuccess)
