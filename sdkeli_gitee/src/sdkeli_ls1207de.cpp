@@ -1,7 +1,7 @@
 #include "rclcpp/rclcpp.hpp"
 
 #include "sdkeli_ls_common_udp.h"
-#include "sdkeli_ls_udp/sdkeli_ls_config.h"
+#include "sdkeli_ls_config.h"
 #include "sdkeli_ls1207de_parser.h"
 
 using namespace sdkeli_ls_udp;
