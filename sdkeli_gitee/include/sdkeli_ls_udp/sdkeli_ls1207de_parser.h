@@ -3,6 +3,8 @@
 
 #include <string>
 
+#include <rclcpp/rclcpp.hpp>
+
 #include "parser_base.h"
 
 namespace sdkeli_ls_udp
@@ -24,12 +26,14 @@ public:
   void SetRangeMax(float max_range);
   void SetTimeIncrement(float time);
   void SetFrameId(const std::string & frame_id);
+  void SetClock(const rclcpp::Clock::SharedPtr & clock);
 
 private:
   float range_min_ {0.0f};
   float range_max_ {0.0f};
-  float time_increment_ {0.0f};
+  float time_increment_ {-1.0f};
   std::string frame_id_;
+  rclcpp::Clock::SharedPtr clock_;
 };
 
 }  // namespace sdkeli_ls_udp

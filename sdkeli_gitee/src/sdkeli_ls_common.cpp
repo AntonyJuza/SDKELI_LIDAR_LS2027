@@ -15,7 +15,9 @@ CSDKeliLsCommon::CSDKeliLsCommon(
   std::memset(recv_buffer_, 0, 65536);
 
   scan_publisher_ =
-    node_->create_publisher<sensor_msgs::msg::LaserScan>("scan", 10);
+    node_->create_publisher<sensor_msgs::msg::LaserScan>(
+    "scan",
+    rclcpp::SensorDataQoS());
 
   node_->get_parameter("publish_datagram", publish_data_);
 
@@ -113,6 +115,10 @@ int CSDKeliLsCommon::LoopOnce()
     recv_buffer_[CMD_FRAME_HEADER_SUB_PKG_NUM];
   unsigned char sub_pkg_idx =
     recv_buffer_[CMD_FRAME_HEADER_SUB_INDEX];
+  const unsigned int sub_pkg_count =
+    static_cast<unsigned int>(sub_pkg_num);
+  const unsigned int sub_pkg_index =
+    static_cast<unsigned int>(sub_pkg_idx);
 
   unsigned char checksum = 0;
   for (int i = 0;
@@ -124,12 +130,36 @@ int CSDKeliLsCommon::LoopOnce()
 
   if (checksum != recv_buffer_[CMD_FRAME_HEADER_CHECK_SUM])
   {
+    RCLCPP_WARN_THROTTLE(
+      node_->get_logger(),
+      *node_->get_clock(),
+      5000,
+      "Dropping SDKELI frame with invalid checksum");
     return ExitSuccess;
   }
 
   if (sub_pkg_num < CMD_FRAME_MIN_SUB_PKG_NUM ||
       sub_pkg_num > CMD_FRAME_MAX_SUB_PKG_NUM)
   {
+    RCLCPP_WARN_THROTTLE(
+      node_->get_logger(),
+      *node_->get_clock(),
+      5000,
+      "Dropping SDKELI frame with invalid sub-package count: %u",
+      static_cast<unsigned>(sub_pkg_num));
+    return ExitSuccess;
+  }
+
+  if (sub_pkg_index >= sub_pkg_count ||
+      sub_pkg_index >= sizeof(data_save_) / sizeof(data_save_[0]))
+  {
+    RCLCPP_WARN_THROTTLE(
+      node_->get_logger(),
+      *node_->get_clock(),
+      5000,
+      "Dropping SDKELI frame with invalid sub-package index: %u of %u",
+      sub_pkg_index,
+      sub_pkg_count);
     return ExitSuccess;
   }
 
@@ -144,7 +174,7 @@ int CSDKeliLsCommon::LoopOnce()
     raw_len);
 
   bool incomplete = false;
-  for (unsigned int i = 0; i < sub_pkg_num - 1; ++i)
+  for (unsigned int i = 0; i < sub_pkg_count - 1; ++i)
   {
     if (data_save_[i].totaIndexlCount !=
           data_save_[i + 1].totaIndexlCount ||
@@ -158,10 +188,15 @@ int CSDKeliLsCommon::LoopOnce()
 
   if (incomplete)
   {
+    RCLCPP_WARN_THROTTLE(
+      node_->get_logger(),
+      *node_->get_clock(),
+      5000,
+      "Waiting for complete SDKELI frame; missing or out-of-order sub-package");
     return ExitSuccess;
   }
 
-  for (unsigned int i = 0; i < sub_pkg_num; ++i)
+  for (unsigned int i = 0; i < sub_pkg_count; ++i)
   {
     std::memcpy(
       store_buffer_ + total_data_len,
@@ -196,7 +231,22 @@ int CSDKeliLsCommon::LoopOnce()
 
   if (success == ExitSuccess)
   {
-    scan_publisher_->publish(msg);
+    if (msg.ranges.empty() || msg.angle_increment <= 0.0 ||
+        msg.scan_time <= 0.0)
+    {
+      RCLCPP_WARN_THROTTLE(
+        node_->get_logger(),
+        *node_->get_clock(),
+        5000,
+        "Dropping invalid SDKELI scan: ranges=%zu angle_increment=%.9f scan_time=%.6f",
+        msg.ranges.size(),
+        msg.angle_increment,
+        msg.scan_time);
+    }
+    else
+    {
+      scan_publisher_->publish(msg);
+    }
   }
 
   std::memset(store_buffer_, 0, 65536);

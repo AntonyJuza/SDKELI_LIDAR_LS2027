@@ -2,6 +2,7 @@
 #include "sdkeli_ls_sensor_frame.h"
 
 #include <rclcpp/rclcpp.hpp>
+#include <algorithm>
 #include <cmath>
 #include <cstdio>
 #include <limits>
@@ -13,8 +14,9 @@ CSDKeliLs1207DEParser::CSDKeliLs1207DEParser()
 : CParserBase(),
   range_min_(0.05f),
   range_max_(10.0f),
-  time_increment_(0.0f),
-  frame_id_("laser")
+  time_increment_(-1.0f),
+  frame_id_("laser"),
+  clock_(std::make_shared<rclcpp::Clock>(RCL_ROS_TIME))
 {
 }
 
@@ -36,20 +38,40 @@ int CSDKeliLs1207DEParser::Parse(
   }
 
   const int data_count = sens_frame.GetSensDataCount();
+  if (data_count <= 0)
+  {
+    return ExitError;
+  }
 
   /* Header */
   msg.header.frame_id = frame_id_;
 
   /* 1: Scan time */
-  const uint16_t scanning_freq = 1000 / 43 * 100;
-  msg.scan_time = 1.0 / (scanning_freq / 100.0);
+  if (config.scan_time > 0.0)
+  {
+    msg.scan_time = config.scan_time;
+  }
+  else if (config.scan_frequency > 0.0)
+  {
+    msg.scan_time = 1.0 / config.scan_frequency;
+  }
+  else
+  {
+    return ExitError;
+  }
 
   /* 2: Time increment */
-  time_increment_ = 0.000040;
-  msg.time_increment = time_increment_;
+  if (time_increment_ > 0.0f)
+  {
+    msg.time_increment = time_increment_;
+  }
+  else
+  {
+    msg.time_increment = msg.scan_time / static_cast<double>(data_count);
+  }
 
   /* 3: Angle min */
-  const int starting_angle = 0xFFF92230;
+  const int32_t starting_angle = static_cast<int32_t>(0xFFF92230);
   msg.angle_min =
     (starting_angle / 10000.0) / 180.0 * M_PI - M_PI / 2;
 
@@ -62,9 +84,15 @@ int CSDKeliLs1207DEParser::Parse(
   msg.angle_max =
     msg.angle_min + (data_count - 1) * msg.angle_increment;
 
+  if (config.angle_min > config.angle_max)
+  {
+    return ExitError;
+  }
+
   /* Adjust index_min using config angle limits */
   int index_min = 0;
-  while (msg.angle_min + msg.angle_increment < config.angle_min)
+  while (index_min < data_count - 1 &&
+         msg.angle_min + msg.angle_increment < config.angle_min)
   {
     msg.angle_min += msg.angle_increment;
     index_min++;
@@ -72,7 +100,8 @@ int CSDKeliLs1207DEParser::Parse(
 
   /* Adjust index_max using config angle limits */
   int index_max = data_count - 1;
-  while (msg.angle_max - msg.angle_increment > config.angle_max)
+  while (index_max > index_min &&
+         msg.angle_max - msg.angle_increment > config.angle_max)
   {
     msg.angle_max -= msg.angle_increment;
     index_max--;
@@ -80,6 +109,12 @@ int CSDKeliLs1207DEParser::Parse(
 
   /* Fill ranges */
   const int output_size = index_max - index_min + 1;
+  if (output_size <= 0 || msg.angle_increment <= 0.0 ||
+      msg.scan_time <= 0.0 || msg.time_increment <= 0.0)
+  {
+    return ExitError;
+  }
+
   msg.ranges.assign(
     output_size,
     std::numeric_limits<float>::infinity());
@@ -126,6 +161,12 @@ int CSDKeliLs1207DEParser::Parse(
     }
   }
 
+  if (config.inverted)
+  {
+    std::reverse(msg.ranges.begin(), msg.ranges.end());
+    std::reverse(msg.intensities.begin(), msg.intensities.end());
+  }
+
   msg.range_min = range_min_;
   msg.range_max = range_max_;
 
@@ -133,7 +174,7 @@ int CSDKeliLs1207DEParser::Parse(
   const double scan_duration =
     static_cast<double>(data_count) * msg.time_increment;
 
-  rclcpp::Time stamp = rclcpp::Clock().now();
+  rclcpp::Time stamp = clock_->now();
   stamp = stamp - rclcpp::Duration::from_seconds(scan_duration);
   stamp = stamp +
           rclcpp::Duration::from_seconds(
@@ -173,6 +214,14 @@ void CSDKeliLs1207DEParser::SetTimeIncrement(float time)
 void CSDKeliLs1207DEParser::SetFrameId(const std::string & frame_id)
 {
   frame_id_ = frame_id;
+}
+
+void CSDKeliLs1207DEParser::SetClock(const rclcpp::Clock::SharedPtr & clock)
+{
+  if (clock)
+  {
+    clock_ = clock;
+  }
 }
 
 }  // namespace sdkeli_ls_udp
